@@ -1,4 +1,4 @@
-package com.alphabet.prototype.service;
+package al.koop.jbpm.embedded.service;
 
 import javax.ejb.Stateless;
 

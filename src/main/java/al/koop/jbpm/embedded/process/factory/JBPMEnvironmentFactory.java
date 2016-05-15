@@ -1,7 +1,7 @@
-package com.alphabet.prototype.process.factory;
+package al.koop.jbpm.embedded.process.factory;
 
-import com.alphabet.prototype.process.handler.NotSoImmediateServiceWorkItemHandler;
-import com.alphabet.prototype.process.handler.SomeImmediateServiceWorkItemHandler;
+import al.koop.jbpm.embedded.process.handler.NotSoImmediateServiceWorkItemHandler;
+import al.koop.jbpm.embedded.process.handler.SomeImmediateServiceWorkItemHandler;
 import org.jbpm.process.audit.event.AuditEventBuilder;
 import org.jbpm.runtime.manager.impl.RuntimeEnvironmentBuilder;
 import org.jbpm.services.api.DeploymentService;

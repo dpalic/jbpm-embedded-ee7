@@ -1,6 +1,6 @@
-package com.alphabet.prototype.process.handler;
+package al.koop.jbpm.embedded.process.handler;
 
-import com.alphabet.prototype.service.SomeImmediateService;
+import al.koop.jbpm.embedded.service.SomeImmediateService;
 import org.drools.core.process.instance.WorkItemHandler;
 import org.kie.api.runtime.process.WorkItem;
 import org.kie.api.runtime.process.WorkItemManager;

@@ -1,4 +1,4 @@
-package com.alphabet.prototype.process.rest;
+package al.koop.jbpm.embedded.process.rest;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;

@@ -1,4 +1,4 @@
-package com.alphabet.prototype;
+package al.koop.jbpm.embedded;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
