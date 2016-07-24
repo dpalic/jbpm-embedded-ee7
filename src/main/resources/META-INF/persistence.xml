@@ -6,7 +6,7 @@
     <!-- Do not change name: see https://issues.jboss.org/browse/JBPM-4454 -->
     <persistence-unit name="org.jbpm.domain" transaction-type="JTA">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <jta-data-source>jdbc/state</jta-data-source>
+        <jta-data-source>jboss/jdbc/state</jta-data-source>
 
         <!-- Mapping files required, othwerwise: No query defined for that name [GetCorrelationKeysByProcessInstanceId] -->
         <mapping-file>META-INF/Taskorm.xml</mapping-file><!-- provided by: jbpm-human-task-jpa -->
@@ -55,7 +55,11 @@
         <class>org.jbpm.kie.services.impl.query.persistence.QueryDefinitionEntity</class>
 
         <properties>
-            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL9Dialect"/>
+	    <!-- use the original hibernate module of wildfly -->
+            <property name="jboss.as.jpa.providerModule" value="org.hibernate" />
+
+            <!-- let hibernate decide which dialect to use -->            
+            <!-- <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL9Dialect"/> -->
             <property name="hibernate.ejb.naming_strategy" value="org.hibernate.cfg.ImprovedNamingStrategy"/>
             <property name="hibernate.connection.charSet" value="UTF-8"/>
             <property name="hibernate.validator.apply_to_ddl" value="false"/>
@@ -63,8 +67,8 @@
             <property name="hibernate.show_sql" value="false"/>
             <property name="hibernate.hbm2ddl.auto" value="update" />
 
-            <!-- If not used, will result in NPE in JtaStatusHelper -->
-            <property name="hibernate.transaction.jta.platform" value="org.hibernate.service.jta.platform.internal.SunOneJtaPlatform"/>
+            <!-- transaction service is well managed by wildfly -->
+            <!-- <property name="hibernate.transaction.jta.platform" value="org.hibernate.service.jta.platform.internal.SunOneJtaPlatform"/> -->
 
         </properties>
     </persistence-unit>
