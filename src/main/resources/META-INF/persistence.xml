@@ -6,7 +6,8 @@
     <!-- Do not change name: see https://issues.jboss.org/browse/JBPM-4454 -->
     <persistence-unit name="org.jbpm.domain" transaction-type="JTA">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <jta-data-source>jboss/jdbc/state</jta-data-source>
+        <!-- <jta-data-source>jboss/jdbc/state</jta-data-source> -->
+        <jta-data-source>jboss/datasources/ExampleDS</jta-data-source>
 
         <!-- Mapping files required, othwerwise: No query defined for that name [GetCorrelationKeysByProcessInstanceId] -->
         <mapping-file>META-INF/Taskorm.xml</mapping-file><!-- provided by: jbpm-human-task-jpa -->
