@@ -7,5 +7,5 @@ import javax.ws.rs.core.Application;
  * Rest service activator.
  */
 @ApplicationPath("api")
-public class PrototypeApplication extends Application {
+public class RestApiApplication extends Application {
 }
