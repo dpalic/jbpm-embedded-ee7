@@ -4,4 +4,4 @@
  * @author Darko Palic
  * @link http://www.xenovation.com
  */
-package al.koop.jbpm.embedded.process.rest.api;
+package com.xenovation.jbpmjee7.embedded.process.rest.api;

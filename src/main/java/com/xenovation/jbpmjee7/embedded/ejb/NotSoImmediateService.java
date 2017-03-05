@@ -1,4 +1,4 @@
-package al.koop.jbpm.embedded.service;
+package com.xenovation.jbpmjee7.embedded.ejb;
 
 import javax.ejb.Stateless;
 

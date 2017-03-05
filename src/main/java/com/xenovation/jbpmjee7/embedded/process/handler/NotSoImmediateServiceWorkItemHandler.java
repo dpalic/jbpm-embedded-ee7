@@ -1,15 +1,16 @@
-package al.koop.jbpm.embedded.process.handler;
+package com.xenovation.jbpmjee7.embedded.process.handler;
 
-import al.koop.jbpm.embedded.service.NotSoImmediateService;
+import static org.slf4j.LoggerFactory.getLogger;
+
+import javax.enterprise.context.ApplicationScoped;
+import javax.inject.Inject;
+
 import org.drools.core.process.instance.WorkItemHandler;
 import org.kie.api.runtime.process.WorkItem;
 import org.kie.api.runtime.process.WorkItemManager;
 import org.slf4j.Logger;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
-
-import static org.slf4j.LoggerFactory.getLogger;
+import com.xenovation.jbpmjee7.embedded.ejb.NotSoImmediateService;
 
 @ApplicationScoped
 public class NotSoImmediateServiceWorkItemHandler implements WorkItemHandler {

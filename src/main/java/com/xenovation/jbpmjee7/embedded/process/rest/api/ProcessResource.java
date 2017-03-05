@@ -1,4 +1,4 @@
-package al.koop.jbpm.embedded.process.rest.api;
+package com.xenovation.jbpmjee7.embedded.process.rest.api;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
