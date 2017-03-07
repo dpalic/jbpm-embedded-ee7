@@ -4,4 +4,4 @@
  * @author Darko Palic
  * @link http://www.xenovation.com
  */
-package com.xenovation.jbpmjee7.embedded.process.rest.init;
+package com.xenovation.jbpmjee7.embedded.rest.init;
