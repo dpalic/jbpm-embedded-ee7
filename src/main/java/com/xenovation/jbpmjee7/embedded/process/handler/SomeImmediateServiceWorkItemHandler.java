@@ -13,6 +13,11 @@ import org.slf4j.Logger;
 
 import com.xenovation.jbpmjee7.embedded.ejb.SomeImmediateService;
 
+/**
+ * a workitem handler.
+ * 
+ * @author Darko Palic
+ */
 @ApplicationScoped
 public class SomeImmediateServiceWorkItemHandler implements WorkItemHandler {
     private static final Logger LOG = getLogger(SomeImmediateServiceWorkItemHandler.class);

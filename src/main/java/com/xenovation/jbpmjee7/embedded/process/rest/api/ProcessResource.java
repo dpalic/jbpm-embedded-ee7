@@ -23,7 +23,7 @@ import static java.util.stream.Collectors.joining;
 @ApplicationScoped
 @Path("/process")
 public class ProcessResource {
-    private static final String BASE_URL = "/jbpm-embedded-ee7-1.0.0-SNAPSHOT/api/process";
+    private static final String BASE_URL = "/jbpm-embedded-ee7/api/process";
 
     @Inject
     private EntityManager entityManager;

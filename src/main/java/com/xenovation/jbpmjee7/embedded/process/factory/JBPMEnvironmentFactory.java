@@ -126,11 +126,21 @@ public class JBPMEnvironmentFactory {
 				.addAsset(newClassPathResource("process.bpmn"), BPMN2).get();
 	}
 
+	/**
+	 * CDI Producer reference for the jBPM {@link UserGroupCallback}.
+	 * 
+	 * @return a initialized jBPM {@link UserGroupCallback}
+	 */
 	@Produces
 	public UserGroupCallback produceSelectedUserGroupCalback() {
 		return new JBossUserGroupCallbackImpl("classpath:/usergroup.properties");
 	}
 
+	/**
+	 * CDI Producer reference for the jBPM {@link WorkItemHandlerProducer}.
+	 * 
+	 * @return a initialized jBPM {@link WorkItemHandlerProducer}
+	 */
 	@Produces
 	private WorkItemHandlerProducer handlers(NotSoImmediateServiceWorkItemHandler notSoImmediateServiceWorkItemHandler,
 			SomeImmediateServiceWorkItemHandler someImmediateServiceWorkItemHandler) {
