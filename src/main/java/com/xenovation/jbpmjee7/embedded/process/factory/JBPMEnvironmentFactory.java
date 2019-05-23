@@ -123,7 +123,7 @@ public class JBPMEnvironmentFactory {
 	public RuntimeEnvironment produceEnvironment() {
 		return RuntimeEnvironmentBuilder.getDefault().entityManagerFactory(getEntityManagerFactory())
 				.registerableItemsFactory(getFactory(beanManager, (AuditEventBuilder) null))
-				.addAsset(newClassPathResource("process.bpmn"), BPMN2).get();
+				.addAsset(newClassPathResource("process.bpmn2"), BPMN2).get();
 	}
 
 	/**

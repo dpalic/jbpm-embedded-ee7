@@ -13,7 +13,6 @@ import org.kie.api.runtime.KieSession;
 import org.kie.api.runtime.manager.RuntimeEngine;
 import org.kie.api.runtime.manager.RuntimeManager;
 import org.kie.api.runtime.process.ProcessInstance;
-import org.kie.internal.runtime.manager.cdi.qualifier.PerRequest;
 import org.kie.internal.runtime.manager.cdi.qualifier.Singleton;
 import org.kie.internal.runtime.manager.context.EmptyContext;
 
@@ -23,7 +22,7 @@ import static java.util.stream.Collectors.joining;
 @ApplicationScoped
 @Path("/process")
 public class ProcessResource {
-    private static final String BASE_URL = "/jbpm-embedded-ee7/api/process";
+    private static final String BASE_URL = "/jbpm-embedded/api/process";
 
     @Inject
     private EntityManager entityManager;

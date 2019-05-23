@@ -4,14 +4,11 @@ import static java.util.Collections.emptyMap;
 import static org.slf4j.LoggerFactory.getLogger;
 
 import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
 
 import org.drools.core.process.instance.WorkItemHandler;
 import org.kie.api.runtime.process.WorkItem;
 import org.kie.api.runtime.process.WorkItemManager;
 import org.slf4j.Logger;
-
-import com.xenovation.jbpmjee7.embedded.ejb.SomeImmediateService;
 
 /**
  * a workitem handler.
@@ -21,9 +18,6 @@ import com.xenovation.jbpmjee7.embedded.ejb.SomeImmediateService;
 @ApplicationScoped
 public class SomeImmediateServiceWorkItemHandler implements WorkItemHandler {
     private static final Logger LOG = getLogger(SomeImmediateServiceWorkItemHandler.class);
-
-    @Inject
-    private SomeImmediateService someImmediateService;
 
     @Override
     public void executeWorkItem(WorkItem workItem, WorkItemManager manager) {

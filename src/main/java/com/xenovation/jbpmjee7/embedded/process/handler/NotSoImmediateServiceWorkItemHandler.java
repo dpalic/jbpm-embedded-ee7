@@ -10,7 +10,6 @@ import org.kie.api.runtime.process.WorkItem;
 import org.kie.api.runtime.process.WorkItemManager;
 import org.slf4j.Logger;
 
-import com.xenovation.jbpmjee7.embedded.ejb.AbstractStatelessEJB;
 import com.xenovation.jbpmjee7.embedded.ejb.NotSoImmediateService;
 
 /**

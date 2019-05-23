@@ -1,9 +1,9 @@
+
 import static java.util.Collections.emptyMap;
 
 import javax.annotation.PostConstruct;
 import javax.ejb.Startup;
 import javax.inject.Inject;
-import javax.persistence.EntityManager;
 
 import org.kie.api.runtime.KieSession;
 import org.kie.api.runtime.manager.RuntimeEngine;
@@ -17,9 +17,6 @@ import org.kie.internal.runtime.manager.context.EmptyContext;
 public class AniStartFlowEJB {
 
 	private volatile boolean processStarted = false;
-
-	@Inject
-	private EntityManager entityManager;
 
 	@Inject
 	@Singleton
@@ -42,7 +39,7 @@ public class AniStartFlowEJB {
 			
 			processStarted = true;
 		} else {
-			System.err.println("process " + processInstance.getId() + " was already started skipping it");
+			System.err.println("process was already started skipping it");
 		}
 	}
 
