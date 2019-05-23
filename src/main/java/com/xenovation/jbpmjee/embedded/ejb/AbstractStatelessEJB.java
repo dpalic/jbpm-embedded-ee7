@@ -1,4 +1,4 @@
-package com.xenovation.jbpmjee7.embedded.ejb;
+package com.xenovation.jbpmjee.embedded.ejb;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;

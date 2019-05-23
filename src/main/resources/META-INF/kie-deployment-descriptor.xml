@@ -12,13 +12,13 @@
     <work-item-handlers>
         <work-item-handler>
             <resolver>mvel</resolver>
-            <identifier>new com.xenovation.jbpmjee7.embedded.process.handler.NotSoImmediateServiceWorkItemHandler()</identifier>
+            <identifier>new com.xenovation.jbpmjee.embedded.process.handler.NotSoImmediateServiceWorkItemHandler()</identifier>
             <parameters/>
             <name>DataService</name>
         </work-item-handler>
         <work-item-handler>
             <resolver>mvel</resolver>
-            <identifier>new com.xenovation.jbpmjee7.embedded.process.handler.SomeImmediateServiceWorkItemHandler()</identifier>
+            <identifier>new com.xenovation.jbpmjee.embedded.process.handler.SomeImmediateServiceWorkItemHandler()</identifier>
             <parameters/>
             <name>BusinessLogicService</name>
         </work-item-handler>

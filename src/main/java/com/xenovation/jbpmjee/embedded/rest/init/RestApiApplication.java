@@ -1,4 +1,4 @@
-package com.xenovation.jbpmjee7.embedded.rest.init;
+package com.xenovation.jbpmjee.embedded.rest.init;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
