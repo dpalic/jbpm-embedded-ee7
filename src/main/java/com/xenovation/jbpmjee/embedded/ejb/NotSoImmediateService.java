@@ -1,4 +1,4 @@
-package com.xenovation.jbpmjee7.embedded.ejb;
+package com.xenovation.jbpmjee.embedded.ejb;
 
 import javax.ejb.Stateless;
 

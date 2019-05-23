@@ -1,8 +1,8 @@
-# Embed jBPM + Wildfly 10.0.0 Server (JEE7)
+# Embed jBPM + Wildfly 14.1.0 Server (JEE8)
 
-This repository contains a POC to show how to embed the jBPM 6.5.0 into Wildfly 10.0.0
+This repository contains a POC to show how to embed the jBPM 7.21.0.Final into Wildfly 14.1.0
 
-This is a fork of the codefullstack sample to integrate into Glassfish. We have fixed the codebase to run properly on Wildfly 10.0.0. 
+This is a fork of the codefullstack sample to integrate into Glassfish. We have fixed the codebase to run properly on Wildfly 14.1.0. 
 
 To get started you need a running database. 
 Best is to use the standard provided ExampleDS from wildfly. This is the default configuration in the persistence.xml file
