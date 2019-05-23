@@ -2,6 +2,6 @@
  * this package contains all classes responsible for the REST api.
  * 
  * @author Darko Palic
- * @link http://www.xenovation.com
+ * @see <a href="http://www.xenovation.com">http://www.xenovation.com</a>
  */
 package com.xenovation.jbpmjee7.embedded.rest.api;
